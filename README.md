@@ -1,6 +1,6 @@
-# Swift XCode Template to use as a starting point for an iOS apps.
+# XCode Template to use as a starting point for an iOS apps.
 
-Custom Xcode project template with coordinators pattern
+Custom Xcode Swift 5 project template with coordinators pattern
 
 # Installation
 ### Method 1 :
