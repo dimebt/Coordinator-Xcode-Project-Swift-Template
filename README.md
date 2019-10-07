@@ -1,3 +1,4 @@
+![Coordinator Template Logo](https://github.com/dimebt/Coordinator-Xcode-Project-Swift-Template/blob/master/DSCoordinatedAppTemplate.png?raw=true)
 # XCode Template to use as a starting point for an iOS apps.
 
 Custom Xcode Swift 5 project template with coordinators pattern
