@@ -1,8 +1,6 @@
 //
-//  main.swift
-//  Install MVVM-AC Xcode Template
+//  Install Coordinator Xcode 11 Template
 //
-//  Created by Dyaneshwar Wagh on 08/04/19.
 //
 //```sudo swift install.swift```
 

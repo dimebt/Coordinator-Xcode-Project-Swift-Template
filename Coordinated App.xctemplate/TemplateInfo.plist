@@ -88,19 +88,23 @@
                             </array>
                             <key>Path</key>
                             <string>Coordinators/MainCoordinator.swift</string>
-                        </dict>
-                        <key>AppDelegate.swift:implementation:properties:window</key>
+                        </dict>                        
+                        <key>SceneDelegate.swift:implementation:properties:window</key>
                         <string>var window: UIWindow?
-var coordinator: MainCoordinator?</string>                        
-                        <key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>                                            
+var coordinator: MainCoordinator?</string>                      
+                        <key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</key>                                            
                         <string>
-let navController = UINavigationController() 
-coordinator = MainCoordinator(navigationController: navController)  
-coordinator?.start()  
-window = UIWindow(frame: UIScreen.main.bounds)  
-window?.rootViewController = navController  
-window?.makeKeyAndVisible()
-// Override point for customization after application launch.</string>
+guard let windowScene = (scene as? UIWindowScene) else {
+    return
+}
+let navigationController = UINavigationController()
+coordinator = MainCoordinator(navigationController: navigationController)
+coordinator?.start()
+let appWindow = UIWindow(frame: windowScene.coordinateSpace.bounds)
+appWindow.windowScene = windowScene
+appWindow.rootViewController = navigationController
+appWindow.makeKeyAndVisible()        
+window = appWindow</string>
                         <key>ViewController.swift:implementation:properties:coordinator</key>
                         <string>weak var coordinator: MainCoordinator?</string>                      
                     </dict>
